@@ -14,4 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [AppController::class, 'index']);
+Route::get('/', [AppController::class, 'projects'])->name('projects');
+
+Route::get('/about', [AppController::class, 'about'])->name('about');
+
+Route::get('/skills', [AppController::class, 'skills'])->name('skills');
+
+Route::get('/contact', [AppController::class, 'contact'])->name('contact');
+
+Route::get('/project-{slug}', [AppController::class, 'redirect'])->where('user', '^([1-4])$');
+Route::post('/project-{slug}', [AppController::class, 'show'])->name('show.project')->where('user', '^([1-4])$');

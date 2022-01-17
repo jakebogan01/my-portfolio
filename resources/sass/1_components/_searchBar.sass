@@ -1,0 +1,25 @@
+/* search bar */
+
+.header
+    input
+        &:focus
+            box-shadow: none
+        &:invalid
+            box-shadow: none
+
+    input[type="search"]::-webkit-search-cancel-button
+        -webkit-appearance: none
+        height: 1em
+        width: 1em
+        background: url(/img/svg/searchCloseBtn.svg) no-repeat 50% 50%
+        background-size: contain
+        opacity: 0
+        pointer-events: none
+        cursor: pointer
+
+    input[type="search"]:focus::-webkit-search-cancel-button
+        opacity: .5
+        pointer-events: all
+
+    input[type="search"].dark::-webkit-search-cancel-button
+        filter: invert(1)

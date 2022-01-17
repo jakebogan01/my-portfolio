@@ -1,14 +1,35 @@
+require('./bootstrap');
+
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/inertia-vue3";
 import { InertiaProgress } from "@inertiajs/progress";
+import { VueWindowSizePlugin } from 'vue-window-size/option-api';
 
 InertiaProgress.init();
 
 createInertiaApp({
-    resolve: (name) => require(`./Pages/${name}`),
-    setup({ el, App, props, plugin }) {
-        createApp({ render: () => h(App, props) })
+    title: (title) => `${title}`,
+    resolve: (name) => require(`./Pages/${name}.vue`),
+    setup({ el, app, props, plugin }) {
+        return createApp({ render: () => h(app, props) })
             .use(plugin)
+            .use(VueWindowSizePlugin)
+            .mixin({ methods: { route } })
             .mount(el);
     },
+});
+
+InertiaProgress.init({
+    // The delay after which the progress bar will
+    // appear during navigation, in milliseconds.
+    delay: 250,
+
+    // The color of the progress bar.
+    color: 'transparent',
+
+    // Whether to include the default NProgress styles.
+    includeCSS: true,
+
+    // Whether the NProgress spinner will be shown.
+    showSpinner: false,
 });
