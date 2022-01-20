@@ -57,6 +57,7 @@
                 overflow: hidden;
             }
             body {
+                background-color: #242236;
                 background-image: url("{{ asset('/img/images/bkg.png') }}");
                 font-family: 'Nunito', sans-serif;
             }
