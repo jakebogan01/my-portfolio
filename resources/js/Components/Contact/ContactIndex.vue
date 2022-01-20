@@ -1,8 +1,6 @@
 <template>
     <!--LOADING-->
-    <div class="flex justify-center items-center w-full h-full rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e]" style="margin-top: 0;" v-if="user === null">
-        <div class="loader">Loading...</div>
-    </div>
+    <Loading v-if="user === null" />
 
     <div class="relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all" :class="appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'" v-if="user">
 
@@ -154,10 +152,12 @@
     import {defineComponent} from "vue"
     import {Link} from "@inertiajs/inertia-vue3"
     import emailjs from "emailjs-com"
+    import Loading from "@/Components/Animations/Loading"
     export default defineComponent({
         name: "ContactIndex",
         components: {
             Link,
+            Loading,
         },
         props: {
             user: Object,

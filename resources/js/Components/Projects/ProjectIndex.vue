@@ -1,8 +1,6 @@
 <template>
     <!--LOADING-->
-    <div class="flex justify-center items-center w-full h-full rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e]" style="margin-top: 0;" v-if="projects.length <= 0">
-        <div class="loader">Loading...</div>
-    </div>
+    <Loading v-if="projects.length <= 0" />
 
     <div class="projects relative flex-grow rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e] pl-0 w-full h-full overflow-x-hidden overflow-y-auto sm:overflow-y-hidden transition-all" :class="appSizeToggle === 'true' ? 'pt-5 992:pt-0' : 'sm:pt-[5.625rem] pb-10 md:pb-2.5'" v-if="projects.length > 0">
 
@@ -95,11 +93,13 @@
     import Swiper from "swiper/bundle"
     import {Link} from "@inertiajs/inertia-vue3"
     import ProjectCard from "@/Components/Projects/ProjectCard"
+    import Loading from "@/Components/Animations/Loading"
     export default defineComponent({
         name: "ProjectIndex",
         components: {
             Link,
             ProjectCard,
+            Loading,
         },
         props: {
             text: String,
