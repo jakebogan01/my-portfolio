@@ -6,13 +6,13 @@
 
     <div class="relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all" :class="appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'" v-if="user">
 
-<!--        CONTACT CONTAINER-->
-        <div class="transition-all" :class="appSizeToggle === 'true' ? 'py-4 576:py-[3.125rem] mx-2 576:mx-10 lg:mx-24 animate-fullScreenTransition' : 'py-4 576:py-[3.125rem] lg:py-0 mx-2 576:mx-10 lg:mx-20 animate-smallScreenTransition'">
+        <!--CONTACT CONTAINER-->
+        <div class="transition-all" :class="appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'">
             <div class="max-w-7xl lg:min-w-[700px] transition-all">
-                <div class="relative bg-white rounded-[1.25rem]">
+                <div class="relative bg-white sm:rounded-[1.25rem]">
                     <h2 class="sr-only">Contact us</h2>
                     <div class="grid grid-cols-1 lg:grid-cols-3">
-                        <div class="relative overflow-hidden py-10 px-6 bg-indigo-700 sm:px-10 xl:px-12 xl:py-16 rounded-tl-[1.25rem] rounded-tr-[1.25rem] lg:rounded-bl-[1.25rem] lg:rounded-tr-none">
+                        <div class="relative overflow-hidden py-10 px-6 bg-indigo-700 sm:px-10 xl:px-12 xl:py-16 sm:rounded-tl-[1.25rem] sm:rounded-tr-[1.25rem] lg:rounded-bl-[1.25rem] lg:rounded-tr-none">
                             <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                                 <svg class="absolute inset-0 w-full h-full" width="343" height="388" viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><path d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z" fill="url(#linear1)" fill-opacity=".1" /><defs><linearGradient id="linear1" x1="254.553" y1="107.554" x2="961.66" y2="814.66" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"></stop><stop offset="1" stop-color="#fff" stop-opacity="0"></stop></linearGradient></defs></svg>
                             </div>
@@ -30,7 +30,8 @@
                                 <h3 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
                                     Get in touch
                                 </h3>
-                                <p class="mt-6 text-base text-indigo-50 max-w-3xl">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                                <p class="mt-6 text-base text-indigo-50 max-w-3xl">If you've got a project in mind, why
+                                    not get in touch. Let's work together.</p>
                                 <dt class="sr-only">Social Links</dt>
 
                                 <!--SOCIAL LINK BUTTONS-->
@@ -52,7 +53,7 @@
                         <!--CONTACT FORM-->
                         <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                             <form class="contact_form mt-6 mr-[2.1875rem] grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" autocomplete="on" @submit.prevent="sendEmail">
-                                <div class="mr-4">
+                                <div class="sm:mr-4">
                                     <label for="first-name" class="sr-only">First name</label>
                                     <input type="text" v-model="first_name" name="first_name" id="first-name" autocomplete="first name" class="py-3 px-4 block w-full shadow-sm text-gray-600 font-semibold bg-gray-200 focus:bg-gray-300 placeholder-gray-500 focus:ring-purple-600 focus:border-purple-600 rounded-md" placeholder="First name" required>
                                 </div>

@@ -133,7 +133,7 @@ class DatabaseSeeder extends Seeder
                 'summary' => 'This is my personal portfolio built with Laravel, Inertia, and Vue JS. Using tailwind CSS on the front end, I hope you enjoy it.',
                 'tags' => '{"tag_1": "laravel", "tag_2": "tailwind", "tag_3": "vue"}',
                 'likes' => 0,
-                'code_url' => '',
+                'code_url' => 'https://my-portfolio.test/contact',
                 'github_url' => 'https://github.com/Wisemen221/my-portfolio',
                 'deleted_at' => NULL,
                 'created_at' => '2022-01-17 08:30:58',

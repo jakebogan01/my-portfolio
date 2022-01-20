@@ -1,6 +1,6 @@
 <template>
     <!--NAV SHOWS ON MOBILE VIEWPORTS-->
-    <nav class="absolute top-0 bg-[rgba(0,0,0,0.30)] h-full sm:hidden overflow-hidden transition-all z-50" :class="showNav">
+    <nav class="absolute top-0 bg-[rgba(0,0,0,0.30)] h-full sm:hidden overflow-hidden z-50" :class="showNav">
         <ul class="relative bg-[#242236] h-full w-[4.1875rem] transition-all" :class="navCurrentDisplay">
             <NavLinks :menuStyles="menuStyles"/>
         </ul>

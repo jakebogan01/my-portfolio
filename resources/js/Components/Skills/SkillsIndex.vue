@@ -1,13 +1,13 @@
 <template>
     <!--LOADING-->
-    <div class="flex justify-center items-center w-full h-full rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e]" style="margin-top: 0;" v-if="user === null">
+    <div class="flex justify-center items-center w-full h-full rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e]" style="margin-top: 0;" v-if="user.length <= 0">
         <div class="loader">Loading...</div>
     </div>
 
-    <div class="relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all" :class="appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'" v-if="user">
+    <div class="relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all" :class="appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'" v-if="user.length > 0">
 
-        <div class="transition-all" :class="appSizeToggle === 'true' ? 'py-4 576:py-[3.125rem] mx-2 576:mx-10 lg:mx-24 animate-fullScreenTransition' : 'py-4 576:py-[3.125rem] lg:py-0 mx-2 576:mx-10 lg:mx-20 animate-smallScreenTransition'">
-            <div class="relative bg-gradient-to-r from-teal-500 to-cyan-600 rounded-[1.25rem] max-w-[56.25rem] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 overflow-hidden">
+        <div class="transition-all" :class="appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'">
+            <div class="relative bg-gradient-to-r from-teal-500 to-cyan-600 sm:rounded-[1.25rem] sm:max-w-[56.25rem] sm:mx-auto py-12 px-4 576:px-10 lg:py-16 lg:px-8 overflow-hidden transition-all">
                 <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
                     <svg class="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360"><path class="text-teal-200 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" /><path class="text-cyan-400 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" /></svg>
                 </div>
