@@ -2382,6 +2382,10 @@ select {
     height: 21.875rem;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -2429,6 +2433,15 @@ select {
 
   .sm\:rounded-tr-\[1\.25rem\] {
     border-top-right-radius: 1.25rem;
+  }
+
+  .sm\:bg-\[\#211b2e\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(33 27 46 / var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-transparent {
+    background-color: transparent;
   }
 
   .sm\:p-6 {
@@ -2741,16 +2754,6 @@ select {
   .\32xl\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
-  }
-
-  .\32xl\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .\32xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
 @media (min-width: 29.6875rem) {

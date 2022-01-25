@@ -5,7 +5,7 @@
     <div class="about relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all" ref="aboutPage" v-if="user">
 
         <!--ABOUT CONTAINER-->
-        <div class="transition-all" :class="appSizeToggle === 'true' ? 'py-4 576:py-[3.125rem] lg:py-[7.125rem] mx-2 576:mx-10 2xl:mx-24 animate-fullScreenTransition' : 'py-4 576:py-[3.125rem] mx-2 576:mx-10 animate-smallScreenTransition'">
+        <div :class="appSizeToggle === 'true' ? 'py-4 576:py-[3.125rem] lg:py-[7.125rem] mx-2 576:mx-10 2xl:mx-24 animate-fullScreenTransition' : 'py-4 576:py-[3.125rem] mx-2 576:mx-10 animate-smallScreenTransition'">
             <div class="rounded-[1.25rem] overflow-hidden">
                 <div class="flex items-center flex-col 840:flex-row relative bg-blue-400 w-full py-4 840:py-0 840:h-[10.9375rem] rounded-[1.25rem] overflow-hidden z-50">
 

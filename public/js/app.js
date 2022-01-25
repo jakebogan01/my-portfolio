@@ -22169,7 +22169,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("LOADING"), _ctx.user === null ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_Loading, {
     key: 0
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.user ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("ABOUT CONTAINER"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["transition-all", _ctx.appSizeToggle === 'true' ? 'py-4 576:py-[3.125rem] lg:py-[7.125rem] mx-2 576:mx-10 2xl:mx-24 animate-fullScreenTransition' : 'py-4 576:py-[3.125rem] mx-2 576:mx-10 animate-smallScreenTransition'])
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(_ctx.appSizeToggle === 'true' ? 'py-4 576:py-[3.125rem] lg:py-[7.125rem] mx-2 576:mx-10 2xl:mx-24 animate-fullScreenTransition' : 'py-4 576:py-[3.125rem] mx-2 576:mx-10 animate-smallScreenTransition')
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("ABOUT USER"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.user.name), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.user.job_title), 1
@@ -22534,7 +22534,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 1,
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all", _ctx.appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("CONTACT CONTAINER"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["transition-all", _ctx.appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'])
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["bg-white sm:bg-transparent h-full sm:h-auto", _ctx.appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("CONTACT DESCRIPTION"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, _hoisted_13, _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SOCIAL LINK BUTTONS"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("dd", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: _ctx.user.social_links.linkedin,
     target: "_blank",
@@ -24059,7 +24059,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "relative bg-gradient-to-r from-teal-500 to-cyan-600 sm:rounded-[1.25rem] sm:max-w-[56.25rem] sm:mx-auto py-12 px-4 576:px-10 lg:py-16 lg:px-8 overflow-hidden transition-all"
+  "class": "relative bg-gradient-to-r from-teal-500 to-cyan-600 h-full sm:h-auto sm:rounded-[1.25rem] sm:max-w-[56.25rem] sm:mx-auto py-12 px-4 576:px-10 lg:py-16 lg:px-8 overflow-hidden transition-all"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24100,7 +24100,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_6 = {
-  "class": "mt-8 sm:flex"
+  "class": "flex mt-8"
 };
 var _hoisted_7 = ["href"];
 
@@ -24155,7 +24155,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 1,
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all", _ctx.appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["transition-all", _ctx.appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'])
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-full sm:h-auto", _ctx.appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SKILLS DESCRIPTION"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: _ctx.route('contact')
   }, _hoisted_9, 8

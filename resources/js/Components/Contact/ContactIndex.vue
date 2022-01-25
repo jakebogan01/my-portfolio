@@ -5,7 +5,7 @@
     <div class="relative lg:px-5 flex-grow rounded-tl-[1.25rem] bg-[#211b2e] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] w-full h-full overflow-x-hidden overflow-y-auto transition-all" :class="appSizeToggle === 'true' ? 'lg:pt-16' : 'lg:flex justify-center items-center'" v-if="user">
 
         <!--CONTACT CONTAINER-->
-        <div class="transition-all" :class="appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'">
+        <div class="bg-white sm:bg-transparent h-full sm:h-auto" :class="appSizeToggle === 'true' ? 'sm:py-[3.125rem] sm:mx-10 lg:mx-24 animate-fullScreenTransition' : 'sm:py-[3.125rem] lg:py-0 sm:mx-10 lg:mx-20 animate-smallScreenTransition'">
             <div class="max-w-7xl lg:min-w-[700px] transition-all">
                 <div class="relative bg-white sm:rounded-[1.25rem]">
                     <h2 class="sr-only">Contact us</h2>
