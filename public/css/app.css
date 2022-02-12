@@ -798,6 +798,9 @@ select {
 .grid {
   display: grid;
 }
+.contents {
+  display: contents;
+}
 .hidden {
   display: none;
 }
@@ -2374,16 +2377,16 @@ select {
     display: none;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:h-\[15\.625rem\] {
     height: 15.625rem;
   }
 
   .sm\:h-\[21\.875rem\] {
     height: 21.875rem;
-  }
-
-  .sm\:h-auto {
-    height: auto;
   }
 
   .sm\:w-auto {
@@ -2433,11 +2436,6 @@ select {
 
   .sm\:rounded-tr-\[1\.25rem\] {
     border-top-right-radius: 1.25rem;
-  }
-
-  .sm\:bg-\[\#211b2e\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(33 27 46 / var(--tw-bg-opacity));
   }
 
   .sm\:bg-transparent {

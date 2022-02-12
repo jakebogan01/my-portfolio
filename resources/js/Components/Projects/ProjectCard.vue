@@ -49,7 +49,7 @@
                 <!--SOCIAL AND CODE LINK BUTTONS-->
                 <div class="flex flex-row justify-center 992:justify-start relative rounded-full">
                     <div class="flex justify-center items-center relative text-2xl text-white bg-[#685ca3] w-[2.9375rem] h-[2.9375rem] hover:scale-110 transition-transform rounded-full overflow-hidden z-50 cursor-pointer" @click="showAllBtns(index)" style="will-change: transform;">
-                        <a :href="projects[index].code_url" target="_blank" class="inner-circle absolute top-0 left-0 right-0 bottom-0 rounded-full w-full h-full bg-[#685ca3] z-0" :style="todo.showLinkBkg">
+                        <a :href="projects[index].code_url" target="_blank" class="inner-circle absolute top-0 left-0 right-0 bottom-0 rounded-full w-full h-full bg-[#685ca3] z-0" :class="todo.showLinkBkg">
                             <i class="fas fa-link origin-center absolute scale-0 z-10" :class="todo.showLinkIcon"></i>
                         </a>
                         <i class="fas fa-eye origin-center relative z-10" :class="todo.hideViewIcon"></i>
@@ -102,7 +102,7 @@
                     {showGithubBtn: "left-0"},
                     {
                         showLikeBtn: "left-0",
-                        showLinkBkg: "display: none;",
+                        showLinkBkg: "hidden",
                         showLikeIndicator: null,
                     },
                 ]
@@ -115,7 +115,7 @@
                 this.todos[index].showLinkIcon = "animate-switchBackIcon";
                 this.todos[index].showGithubBtn = "animate-move2ndBtnOnMobile 992:animate-move2ndBtn";
                 this.todos[index].showLikeBtn = "animate-move3rdBtnOnMobile 992:animate-move3rdBtn";
-                this.todos[index].showLinkBkg = "display: contents;";
+                this.todos[index].showLinkBkg = "contents";
             },
             liked(index)
             {

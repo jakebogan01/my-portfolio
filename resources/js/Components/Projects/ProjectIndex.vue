@@ -2,7 +2,7 @@
     <!--LOADING-->
     <Loading v-if="projects.length <= 0" />
 
-    <div class="projects relative flex-grow rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e] pl-0 w-full h-full overflow-x-hidden overflow-y-auto sm:overflow-y-hidden transition-all" :class="appSizeToggle === 'true' ? 'pt-5 992:pt-0' : 'sm:pt-[5.625rem] pb-10 md:pb-2.5'" v-if="projects.length > 0">
+    <div class="projects relative flex-grow rounded-tl-[1.25rem] shadow-[inset_0_0_0.3125rem_rgb(0,0,0)] bg-[#211b2e] pl-0 w-full h-full overflow-x-hidden overflow-y-auto sm:overflow-y-hidden transition-all" :class="appSizeToggle === 'true' ? 'pt-5 992:pt-0' : 'sm:pt-[5.625rem] pb-10 md:pb-2.5'" v-if="projects.length > 0" >
 
         <div class="relative sm:hidden pt-12 pb-20 px-4">
             <div class="relative max-w-7xl mx-auto">

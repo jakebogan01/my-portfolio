@@ -21449,7 +21449,7 @@ __webpack_require__.r(__webpack_exports__);
         showGithubBtn: "left-0"
       }, {
         showLikeBtn: "left-0",
-        showLinkBkg: "display: none;",
+        showLinkBkg: "hidden",
         showLikeIndicator: null
       }]
     };
@@ -21460,7 +21460,7 @@ __webpack_require__.r(__webpack_exports__);
       this.todos[index].showLinkIcon = "animate-switchBackIcon";
       this.todos[index].showGithubBtn = "animate-move2ndBtnOnMobile 992:animate-move2ndBtn";
       this.todos[index].showLikeBtn = "animate-move3rdBtnOnMobile 992:animate-move3rdBtn";
-      this.todos[index].showLinkBkg = "display: contents;";
+      this.todos[index].showLinkBkg = "contents";
     },
     liked: function liked(index) {
       this.todos[index].showLikeBtn = "animate-move3rdBtnOnMobile 992:animate-move3rdBtn bg-red-500";
@@ -23251,14 +23251,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       href: _ctx.projects[index].code_url,
       target: "_blank",
-      "class": "inner-circle absolute top-0 left-0 right-0 bottom-0 rounded-full w-full h-full bg-[#685ca3] z-0",
-      style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)(todo.showLinkBkg)
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["inner-circle absolute top-0 left-0 right-0 bottom-0 rounded-full w-full h-full bg-[#685ca3] z-0", todo.showLinkBkg])
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["fas fa-link origin-center absolute scale-0 z-10", todo.showLinkIcon])
     }, null, 2
     /* CLASS */
-    )], 12
-    /* STYLE, PROPS */
+    )], 10
+    /* CLASS, PROPS */
     , _hoisted_19), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["fas fa-eye origin-center relative z-10", todo.hideViewIcon])
     }, null, 2
