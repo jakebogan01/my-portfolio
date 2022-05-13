@@ -9,18 +9,42 @@
 
 ## My Personal Portfolio
 
-To install:
+## Project setup
+```
+npm install
+```
 
-<code>npm install</code>
+### install packages
+```
+composer install
+```
 
-<code>composer install</code>
+### copy .env.example
+```
+cp .env.example .env
+```
 
-<code>cp .env.example .env</code>
+### generate key
+```
+php artisan key:generate
+```
 
-<code>php artisan key:generate</code>
+### generate key
+```
+php artisan key:generate
+```
 
-<code>npm run dev</code>
+### Compiles
+```
+npm run dev
+```
 
-<code>php artisan migrate</code>
+### create tables in databse
+```
+php artisan migrate
+```
 
-<code>php artisan serve</code>
+### create server
+```
+php artisan serve
+```
