@@ -28,8 +28,9 @@
                                 <h3 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
                                     Get in touch
                                 </h3>
-                                <p class="mt-6 text-base text-indigo-50 max-w-3xl">If you've got a project in mind, why
-                                    not get in touch. Let's work together.</p>
+                                <p class="mt-6 text-base text-indigo-50 max-w-3xl">
+                                    If you've got a project in mind, why not stay in touch? Let's work together.
+                                </p>
                                 <dt class="sr-only">Social Links</dt>
 
                                 <!--SOCIAL LINK BUTTONS-->
