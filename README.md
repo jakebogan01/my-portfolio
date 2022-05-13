@@ -9,19 +9,18 @@
 
 ## My Personal Portfolio
 
-I am a Jr Web Developer, I created this portfolio to showcase my experience and knowledge. This application is using Laravel 8, Inertia JS and Vue.JS. Followed by Tailwind CSS/SASS on the front end.
+To install:
 
-Not only is this just another portfolio, but it's I plan to make it a product to serve all users who may want to register with their own account and use this site as their own personal portfolio. They may include their personal projects and information to be stored and viewed on my platform. I will soon be using Jetsream with Laravel Nova as my CMS to help manage all content.
+<code>npm install</code>
 
-## Software Used In Project:
+<code>composer install</code>
 
-- [Laravel 8](https://laravel.com).
-- [MySQL](https://www.mysql.com).
-- [Inertia](https://inertiajs.com).
-- [Vue.JS 3](https://v3.vuejs.org).
-- [SASS](https://sass-lang.com).
-- [Tailwind CSS](https://tailwindcss.com).
+<code>cp .env.example .env</code>
 
-Soon to be implemented:
-- [Nova](https://nova.laravel.com/docs/1.0/installation.html).
-- [Jetstream](https://jetstream.laravel.com/2.x/introduction.html).
+<code>php artisan key:generate</code>
+
+<code>npm run dev</code>
+
+<code>php artisan migrate</code>
+
+<code>php artisan serve</code>
